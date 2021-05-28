@@ -7,7 +7,7 @@ app = Flask(__name__)
 def hello():
     return "Hello, This is Kims Azure Web App using Flask!"
 
-@app.route("/sms", methods=['GET', 'POST'])
+@app.route("/smsold", methods=['GET', 'POST'])
 def sms_reply():
     # Respond to incoming calls with a simple text message.
     # Start our TwiML response
@@ -18,7 +18,7 @@ def sms_reply():
 
     return str(resp)
     
-#@app.route("/sms2", methods=['GET', 'POST'])
+@app.route("/sms", methods=['GET', 'POST'])
 def incoming_sms():
     # Send a dynamic reply to an incoming text message
     # Get the message the user sent our Twilio number
