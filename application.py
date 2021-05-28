@@ -5,7 +5,7 @@ app = Flask(__name__)
 def hello():
     return "Hello, This is Kims Azure Web App using Flask!"
 
-"""
+
 from twilio.twiml.messaging_response import MessagingResponse
 #@app.route("/sms", methods=['GET', 'POST'])
 def sms_reply():
@@ -20,7 +20,7 @@ def sms_reply():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
+"""
     
 #@app.route("/sms", methods=['GET', 'POST'])
 def incoming_sms():
