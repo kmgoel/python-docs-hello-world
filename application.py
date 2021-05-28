@@ -10,7 +10,7 @@ def hello():
 #@app.route("/sms", methods=['GET', 'POST'])
 """
 def sms_reply():
-    """Respond to incoming calls with a simple text message."""
+    # Respond to incoming calls with a simple text message.
     # Start our TwiML response
     resp = MessagingResponse()
 
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     
 #@app.route("/sms", methods=['GET', 'POST'])
 def incoming_sms():
-    """Send a dynamic reply to an incoming text message"""
+    # Send a dynamic reply to an incoming text message
     # Get the message the user sent our Twilio number
     body = request.values.get('Body', None)
 
