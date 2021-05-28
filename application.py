@@ -28,10 +28,10 @@ def incoming_sms():
     resp = MessagingResponse()
 
     # Determine the right reply for this message
-    if body == 'hello':
-        resp.message("Hi!")
-    elif body == 'bye':
-        resp.message("Goodbye")
+    if body == '1':
+        resp.message("Great! See you for that shift")
+    elif body == '2':
+        resp.message("Go find coverage for that shift")
 
     return str(resp)
 
