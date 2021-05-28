@@ -1,13 +1,12 @@
 from flask import Flask, request, redirect
-from twilio.twiml.messaging_response import MessagingResponse
-
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello, World!"
+    return "Hello, This is Kims Azure Web App using Flask!"
 
 """
+from twilio.twiml.messaging_response import MessagingResponse
 #@app.route("/sms", methods=['GET', 'POST'])
 def sms_reply():
     # Respond to incoming calls with a simple text message.
